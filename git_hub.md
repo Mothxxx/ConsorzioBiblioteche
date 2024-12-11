@@ -1,4 +1,27 @@
 # Comandi git hub 
+
+1. Il Collaboratore si collega al Repository
+
+Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e iniziare a lavorare sul progetto:
+    1.Clonare il repository remoto:
+    Se il tuo collaboratore ha già configurato Git, dovrà eseguire il comando per clonare il repository:
+
+    ```bash
+    git clone https://github.com/tuo_username/nome_del_repo.git
+    ```
+    In alternativa, può utilizzare l’interfaccia grafica di GitHub Desktop per fare questa operazione.
+
+	2. Navigare nella cartella del progetto:
+    Dopo aver clonato il repository, il collaboratore può entrare nella cartella del progetto:
+
+    ```cd nome_del_repo
+
+
+	3.	Aggiornare il progetto con le modifiche dal repository remoto:
+Prima di iniziare a lavorare, il collaboratore dovrebbe assicurarsi di avere l’ultima versione del progetto:
+
+git pull origin mai
+
 1. Quando fai modifiche:
 
 - `git add .`: Aggiungi i file modificati o nuovi al tuo staging area.
