@@ -14,8 +14,9 @@ Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e 
 	2. Navigare nella cartella del progetto:
     Dopo aver clonato il repository, il collaboratore può entrare nella cartella del progetto:
 
-    ```cd nome_del_repo
-
+    ``` bash
+    cd nome_del_repo
+    ```
 
 	3.	Aggiornare il progetto con le modifiche dal repository remoto:
 Prima di iniziare a lavorare, il collaboratore dovrebbe assicurarsi di avere l’ultima versione del progetto:
