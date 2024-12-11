@@ -4,8 +4,7 @@
 Il progetto consiste nella realizzazione di un sistema informativo per un consorzio di biblioteche universitarie.
 
 ## 2. ANALISI DEI REQUISITI
-1. Ogni **biblioteca** del consorzio è identificata in modo univoco da un *codice*, ha sede presso una *città* e ha un *orario di 
-  apertura* e *chiusura giornaliero*, che _può variare a seconda dei giorni della settimana_. 
+1. Ogni **biblioteca** del consorzio è identificata in modo univoco da un *codice*, ha sede presso una *città* e ha un *orario di apertura* e *chiusura giornaliero*, che _può variare a seconda dei giorni della settimana_. 
 
 2. Il **consorzio** gestisce un certo numero di libri universitari, dei quali bisogna mantenere le informazioni sul *titolo*, *autori* 
   (che possono essere più di uno), *casa editrice* e *ISBN* (che identifica il libro).      
@@ -30,17 +29,18 @@ Il progetto consiste nella realizzazione di un sistema informativo per un consor
    Ogni libro _può appartenere ad al più una collana_.
 
 9. Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
-  dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (nome, 
-  cognome e codice fiscale), email e indirizzo di residenza completo (via, cap, numero civico).     
-  Per ciascuno di loro viene inoltre memorizzata la data nella quale si sono registrati presso la biblioteca.  
-  Ad ogni utente viene assegnato un codice univoco.     
-  Quando un utente ottiene un libro in prestito la base di dati registra la data di inizio prestito e la copia del libro che è stata presa.   
-  Quando (la copia de) il libro viene restituita, la data di restituzione viene registrata.    
-  Per i *dottorandi* bisogna mantenere le informazioni sul corso di dottorato, anno di iscrizione e docente relatore, per gli *studenti* bisogna mantenere la matricola ed anno di iscrizione, per i *docenti* bisogna mantenere il settore scientifico disciplinare e ruolo.
+  dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (*nome*, 
+  *cognome* e *codice fiscale*), *email* e *indirizzo di residenza completo* (via, cap, numero civico).     
+  Per ciascuno di loro viene inoltre memorizzata la *data nella quale si sono registrati presso la biblioteca*.  
+  Ad ogni utente viene assegnato un *codice univoco*.     
+  Quando un utente ottiene un libro in prestito la base di dati registra la *data di inizio prestito* e la *copia del libro*
+  che è stata presa.   
+  Quando (la copia de) il libro viene restituita, la *data di restituzione* viene registrata.    
+  Per i **dottorandi** bisogna mantenere le informazioni sul *corso di dottorato*, *anno di iscrizione*e *docente relatore*, per gli *studenti* bisogna mantenere la **matricola** ed *anno di iscrizione*, per i **docenti** bisogna mantenere il *settore scientifico disciplinare* e *ruolo*.
 
 10. I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
-  Per ogni fornitore si vuole mantenere l’informazione sulla Partita Iva, capitale sociale e indirizzo.   
-  Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore.
+  Per ogni fornitore si vuole mantenere l’informazione sulla *Partita Iva*, *capitale sociale* e *indirizzo*.   
+  _Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore_.
 
 ## 3. SPECIFICA DELLE OPERAZIONI SUI DATI PREVISTE
 Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente definite nel testo precedente, sono:
