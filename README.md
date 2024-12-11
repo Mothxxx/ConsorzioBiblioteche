@@ -60,15 +60,20 @@ Il progetto dovrà prevedere le seguenti fasi:
 2. **Produrre lo schema ER derivante dalla eliminazione delle eventuali generalizzazioni.**
 
 3. **Tradurre lo schema ER ottenuto al punto precedente nel modello relazionale**, specificando per ciascuna tabella ottenuta:
-   - Nome
-   - Attributi (con relativo tipo)
+   - Nome della tabella
+   - Attributi con relativi tipi di dati
    - Identificatori primari
-   - Vincoli di integrità.
+   - Vincoli di integrità (ad esempio, NOT NULL, UNIQUE, CHECK)
+   - Vincoli di integrità referenziale (relazioni tra tabelle, FOREIGN KEY)
+
    La traduzione deve essere fedele allo schema ER progettato.
 
-4. **Specificare dettagliatamente TUTTI i vincoli di integrità referenziale** che devono essere inseriti all’interno della base di dati al fine di garantirne la consistenza, prima di effettuare l’inserimento delle tuple. **NON SI POSSONO DEFINIRE OPERAZIONI DI MANIPOLAZIONE DI DATI SU TABELLE LA CUI STRUTTURA VIENE MODIFICATA SUCCESSIVAMENTE.**
+4. **Specificare dettagliatamente TUTTI i vincoli di integrità referenziale** che devono essere inseriti all’interno della base di dati al fine di garantirne la consistenza, prima di effettuare l’inserimento delle tuple.  
+Questo include la definizione di chiavi esterne (FOREIGN KEY) e le azioni da intraprendere in caso di violazione del vincolo (ad esempio, azioni ON DELETE CASCADE, ON UPDATE RESTRICT).
+**NON SI POSSONO DEFINIRE OPERAZIONI DI MANIPOLAZIONE DI DATI SU TABELLE LA CUI STRUTTURA VIENE MODIFICATA SUCCESSIVAMENTE.**
 
-5. **Indicare se devono essere inseriti vincoli aggiuntivi non previsti dal modello.**
+5. **Indicare se devono essere inseriti vincoli aggiuntivi non previsti dal modello.**  
+    Se il modello relazionale richiede l’aggiunta di vincoli non previsti dal modello ER, ad esempio un vincolo di unicità su un attributo, devi specificarli.
 
 6. **Produrre il database in MySQL.**  
    Il database deve contenere tutte le tabelle individuate nella fase di progetto.  
