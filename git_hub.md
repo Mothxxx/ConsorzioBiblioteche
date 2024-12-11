@@ -24,10 +24,7 @@ Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e 
 - `git commit -m "Descrizione delle modifiche"`: Committi le modifiche (una versione del lavoro che hai fatto).
 - `git push`: Spingi le modifiche nel repository remoto su GitHub, in modo che l’altro membro del team possa vederle o 
               `git push origin main`.
-
-5. Quando l’altro membro vuole vedere le modifiche:
-
-- `git pull`: Prima di lavorare, l’altro membro fa un git pull per scaricare l’ultima versione del progetto dal repository remoto. Questo aggiorna la sua copia locale con tutte le modifiche fatte da entrambi.  
+ 
 
 6. Flusso di lavoro giornaliero:
 
