@@ -14,6 +14,7 @@ Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e 
     Dopo aver clonato il repository, il collaboratore può entrare nella cartella del progetto:
     `cd nome_del_repo`
 
+
 3.Aggiornare il progetto con le modifiche dal repository remoto:
     Prima di iniziare a lavorare, il collaboratore dovrebbe assicurarsi di avere l’ultima versione del progetto:
     `git pull origin main`
@@ -41,3 +42,11 @@ Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e 
 - `git push:` Per inviare le modifiche su GitHub.    
 - `git pull`: Per ricevere le modifiche da GitHub prima di iniziare a lavorare.    
 - `git status`: per controllare i file modificati che non sono ancora stati aggiunti al commit.
+
+# Connessione con il database
+1. Scaricare SQL su VSCode;
+2. accedere a SQL tramite barra laterale.
+3. collegarsi al database inserendo:
+    - mariadb -u daniele -p -h 192.168.1.24 ConsorzioBiblioteche da termianle; 
+    - oppure inserendo gli stessi parametri su VSCode usando SQL.
+3. apri un file di testo  .sql e scrivi qualche query e vedrai le modifiche nel db .
