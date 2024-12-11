@@ -1,10 +1,10 @@
 # Entità - Relazione:
 
 1. **Biblioteca**:
-    - IdBiblioteca (PK)
+    - CodBiblioteca (PK)
     - Città
     - Orario apertura
-    - Orario chiusurass
+    - Orario chiusura
     - Orari settimanali (questa entità potrebbe essere separata in un’altra tabella per gestire gli orari giornalieri)
 
    *Relazioni*:  
