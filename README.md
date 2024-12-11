@@ -88,8 +88,4 @@ Questo include la definizione di chiavi esterne (FOREIGN KEY) e le azioni da int
    In particolare, dovranno essere restituiti tutti i risultati delle interrogazioni sul database realizzato. Ci dovrà quindi essere uno o più file che contengono il risultato dell’esecuzione delle istruzioni `SELECT`.  
    Nomi di tabelle, campi, etc. possono essere scelti a piacere.
 
-## 5. Requisiti per l'ambiente di lavoro
-- **MySQL**: Il database deve essere sviluppato su MySQL.
-- **Strumenti di sviluppo**: Utilizzo di Visual Studio o qualsiasi IDE preferito per scrivere il codice e gestire il progetto.
-
 
