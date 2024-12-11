@@ -86,6 +86,4 @@ Questo include la definizione di chiavi esterne (FOREIGN KEY) e le azioni da int
    Si verifichi che le interrogazioni restituiscano i risultati aspettati.  
    **NEL CASO IN CUI LA COMPILAZIONE DEL FILE DIA LUOGO AD ERRORE, IL PROGETTO NON VERRÀ CORRETTO.**  
    In particolare, dovranno essere restituiti tutti i risultati delle interrogazioni sul database realizzato. Ci dovrà quindi essere uno o più file che contengono il risultato dell’esecuzione delle istruzioni `SELECT`.  
-   Nomi di tabelle, campi, etc. possono essere scelti a piacere.
-
-
+   Nomi di tabelle, campi, etc. possono essere scelti a piacere..
