@@ -19,7 +19,8 @@
 
 4. In sintesi:
 
-- `git add .`: Per aggiungere le modifiche.    
+- `git add <nome_file>`: Per aggiungere le modifiche.    
 - `git commit`: Per salvare le modifiche localmente.    
 - `git push:` Per inviare le modifiche su GitHub.    
 - `git pull`: Per ricevere le modifiche da GitHub prima di iniziare a lavorare.    
+- `git status`: per controllare i file modificati che non sono ancora stati aggiunti al commit.
