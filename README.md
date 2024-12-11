@@ -4,25 +4,31 @@
 Il progetto consiste nella realizzazione di un sistema informativo per un consorzio di biblioteche universitarie.
 
 ## 2. ANALISI DEI REQUISITI
-- Ogni **biblioteca** del consorzio è identificata in modo univoco da un codice, ha sede presso una città e ha un orario di apertura e chiusura giornaliero, 
-  che può variare a seconda dei giorni della settimana. 
+- Ogni **biblioteca** del consorzio è identificata in modo univoco da un codice, ha sede presso una città e ha un orario di 
+  apertura e chiusura giornaliero, che può variare a seconda dei giorni della settimana. 
 
-- Il **consorzio** gestisce un certo numero di libri universitari, dei quali bisogna mantenere le informazioni sul titolo, autori (che possono essere più di uno), 
-  casa editrice e ISBN (che identifica il libro).      
+- Il **consorzio** gestisce un certo numero di libri universitari, dei quali bisogna mantenere le informazioni sul titolo, autori 
+  (che possono essere più di uno), casa editrice e ISBN (che identifica il libro).      
 
-- Ogni **libro** appartiene ad una o più **categorie**, per ognuna delle quali si memorizza il nome e una breve descrizione. Un libro può aver avuto più edizioni. 
+- Ogni **libro** appartiene ad una o più **categorie**, per ognuna delle quali si memorizza il nome 
+  e una breve descrizione. Un libro può aver avuto più edizioni. 
 
-- Ogni **edizione** è identificata da un codice unico nell’ambito delle edizioni di uno stesso libro e per ogni edizione si vuole mantenere il numero di pagine e il costo.  
+- Ogni **edizione** è identificata da un codice unico nell’ambito delle edizioni di uno stesso 
+  libro e per ogni edizione si vuole mantenere il numero di pagine e il costo.  
   Di ogni edizione di un libro possono esistere più copie, ognuna della quali è identificata da un numero, unico nell’ambito delle copie di uno stesso libro.     
 
-- Per ogni **copia** va indicata la sua collocazione, ovvero la biblioteca, il numero dello scaffale e il numero del posto. Non è possibile che due copie diverse abbiano la stessa collocazione.
+- Per ogni **copia** va indicata la sua collocazione, ovvero la biblioteca, il numero dello 
+  scaffale e il numero del posto. Non è possibile che due copie diverse abbiano la stessa collocazione.
 
-- Per ogni **autore** si vogliono memorizzare le informazioni relative a nome, cognome, luogo, data di nascita e nazionalità.   
+- Per ogni **autore** si vogliono memorizzare le informazioni relative a nome, cognome, luogo, data 
+  di nascita e nazionalità.   
 - Per la **casa editrice** si vogliono memorizzare informazioni relative a nome, sede e partita iva.
 
-- I libri possono essere organizzati in **collane**, caratterizzate da un nome ed una descrizione. Ogni libro può appartenere ad al più una collana.
+- I libri possono essere organizzati in **collane**, caratterizzate da un nome ed una descrizione.  
+   Ogni libro può appartenere ad al più una collana.
 
-- Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (nome, 
+- Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
+  dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (nome, 
   cognome e codice fiscale), email e indirizzo di residenza completo (via, cap, numero civico).     
   Per ciascuno di loro viene inoltre memorizzata la data nella quale si sono registrati presso la biblioteca.
   Ad ogni utente viene assegnato un codice univoco.   
@@ -77,22 +83,24 @@ Il progetto dovrà prevedere le seguenti fasi:
 
    La traduzione deve essere fedele allo schema ER progettato.
 
-4. **Specificare dettagliatamente TUTTI i vincoli di integrità referenziale** che devono essere inseriti all’interno della base di dati al fine di garantirne la consistenza, prima di effettuare l’inserimento delle tuple.  
-Questo include la definizione di chiavi esterne (FOREIGN KEY) e le azioni da intraprendere in caso di violazione del vincolo (ad esempio, azioni ON DELETE CASCADE, ON UPDATE RESTRICT).
-**NON SI POSSONO DEFINIRE OPERAZIONI DI MANIPOLAZIONE DI DATI SU TABELLE LA CUI STRUTTURA VIENE MODIFICATA SUCCESSIVAMENTE.**
+4. **Specificare dettagliatamente TUTTI i vincoli di integrità referenziale** che devono essere inseriti all’interno della base di 
+    dati al fine di garantirne la consistenza, prima di effettuare l’inserimento delle tuple.     
+    Questo include la definizione di chiavi esterne (FOREIGN KEY) e le azioni da intraprendere in caso di violazione del vincolo (ad esempio, azioni ON DELETE CASCADE, ON UPDATE RESTRICT).    
+    **NON SI POSSONO DEFINIRE OPERAZIONI DI MANIPOLAZIONE DI DATI SU TABELLE LA CUI STRUTTURA VIENE MODIFICATA SUCCESSIVAMENTE.**  
 
-5. **Indicare se devono essere inseriti vincoli aggiuntivi non previsti dal modello.**  
-    Se il modello relazionale richiede l’aggiunta di vincoli non previsti dal modello ER, ad esempio un vincolo di unicità su un attributo, devi specificarli.
+5. **Indicare se devono essere inseriti vincoli aggiuntivi non previsti dal modello.**    
+    Se il modello relazionale richiede l’aggiunta di vincoli non previsti dal modello ER, ad esempio un vincolo di unicità su un attributo, devi specificarli.    
 
-6. **Produrre il database in MySQL.**  
-   Il database deve contenere tutte le tabelle individuate nella fase di progetto.  
-   **LA STRUTTURA DEL DATABASE VA COMPLETAMENTE SPECIFICATA PRIMA DELL’INSERZIONE, CANCELLAZIONE E AGGIORNAMENTO DELLE TUPLE.**  
-   In particolare, devono essere definiti tutti i vincoli di integrità necessari affinché la base di dati modelli correttamente la realtà e per i vincoli di integrità referenziale vanno definite opportune politiche di rimedio alle violazioni.  
-   Il database va consegnato sotto forma di un unico file di testo contenente tutti i comandi SQL necessari per formare le tabelle, inserire i dati in queste ultime ed effettuare tutte le operazioni richieste.  
-   **NEL CASO IN CUI LA COMPILAZIONE DEL FILE DIA LUOGO AD ERRORE, IL PROGETTO NON VERRÀ CORRETTO.**
-
-7. **Le interrogazioni vanno scritte in un file separato.**  
-   Si verifichi che le interrogazioni restituiscano i risultati aspettati.  
+6. **Produrre il database in MySQL.**    
+   Il database deve contenere tutte le tabelle individuate nella fase di progetto.    
+   **LA STRUTTURA DEL DATABASE VA COMPLETAMENTE SPECIFICATA PRIMA DELL’INSERZIONE, CANCELLAZIONE E AGGIORNAMENTO DELLE TUPLE.**      
+   In particolare, devono essere definiti tutti i vincoli di integrità necessari affinché la base di dati modelli correttamente la realtà e per i vincoli di integrità referenziale vanno definite opportune politiche di rimedio alle violazioni.    
+   Il database va consegnato sotto forma di un unico file di testo contenente tutti i comandi SQL necessari per formare le tabelle, inserire i dati in queste ultime ed effettuare tutte le operazioni richieste.    
    **NEL CASO IN CUI LA COMPILAZIONE DEL FILE DIA LUOGO AD ERRORE, IL PROGETTO NON VERRÀ CORRETTO.**  
-   In particolare, dovranno essere restituiti tutti i risultati delle interrogazioni sul database realizzato. Ci dovrà quindi essere uno o più file che contengono il risultato dell’esecuzione delle istruzioni `SELECT`.  
-   Nomi di tabelle, campi, etc. possono essere scelti a piacere..
+
+7. **Le interrogazioni vanno scritte in un file separato.**    
+   Si verifichi che le interrogazioni restituiscano i risultati aspettati.    
+   **NEL CASO IN CUI LA COMPILAZIONE DEL FILE DIA LUOGO AD ERRORE, IL PROGETTO NON VERRÀ CORRETTO.**    
+   In particolare, dovranno essere restituiti tutti i risultati delle interrogazioni sul database realizzato.     
+   Ci dovrà quindi essere uno o più file che contengono il risultato dell’esecuzione delle istruzioni `SELECT`.    
+   Nomi di tabelle, campi, etc. possono essere scelti a piacere.
