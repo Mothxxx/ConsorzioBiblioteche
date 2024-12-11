@@ -2,38 +2,34 @@
 
 1. Il Collaboratore si collega al Repository
 
-Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e iniziare a lavorare sul progetto:
-    1.Clonare il repository remoto:
-    Se il tuo collaboratore ha già configurato Git, dovrà eseguire il comando per clonare il repository:
+Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e iniziare a lavorare sul progetto:    
+- Clonare il repository remoto:  
+    Se il tuo collaboratore ha già configurato Git, dovrà eseguire il comando per clonare il repository:  
 
-    ```bash
-    git clone https://github.com/tuo_username/nome_del_repo.git
-    ```
-    In alternativa, può utilizzare l’interfaccia grafica di GitHub Desktop per fare questa operazione.
+    `git clone https://github.com/Mothxxx/-ConsorzioBiblioteche.git`  
 
-	2. Navigare nella cartella del progetto:
+    In alternativa, può utilizzare l’interfaccia grafica di GitHub Desktop per fare questa operazione.  
+
+2. Navigare nella cartella del progetto:
     Dopo aver clonato il repository, il collaboratore può entrare nella cartella del progetto:
+    `cd nome_del_repo`
 
-    ``` bash
-    cd nome_del_repo
-    ```
+3.Aggiornare il progetto con le modifiche dal repository remoto:
+    Prima di iniziare a lavorare, il collaboratore dovrebbe assicurarsi di avere l’ultima versione del progetto:
+    `git pull origin main`
 
-	3.	Aggiornare il progetto con le modifiche dal repository remoto:
-Prima di iniziare a lavorare, il collaboratore dovrebbe assicurarsi di avere l’ultima versione del progetto:
-
-git pull origin mai
-
-1. Quando fai modifiche:
+4. Quando fai modifiche:
 
 - `git add .`: Aggiungi i file modificati o nuovi al tuo staging area.
 - `git commit -m "Descrizione delle modifiche"`: Committi le modifiche (una versione del lavoro che hai fatto).
-- `git push`: Spingi le modifiche nel repository remoto su GitHub, in modo che l’altro membro del team possa vederle.
+- `git push`: Spingi le modifiche nel repository remoto su GitHub, in modo che l’altro membro del team possa vederle o 
+              `git push origin main`.
 
-2. Quando l’altro membro vuole vedere le modifiche:
+5. Quando l’altro membro vuole vedere le modifiche:
 
 - `git pull`: Prima di lavorare, l’altro membro fa un git pull per scaricare l’ultima versione del progetto dal repository remoto. Questo aggiorna la sua copia locale con tutte le modifiche fatte da entrambi.  
 
-3. Flusso di lavoro giornaliero:
+6. Flusso di lavoro giornaliero:
 
     1. Ogni membro lavora sul proprio computer e modifica i file.  
     2. Quando un membro finisce una parte del lavoro, fa un commit locale (git commit) e poi spinge le modifiche al repository remoto con git push.  
@@ -41,7 +37,7 @@ git pull origin mai
     Se ci sono conflitti, Git lo avviserà, ma questi possono essere risolti facilmente.  
     4. Il processo continua iterativamente.    
 
-4. In sintesi:
+7. In sintesi:
 
 - `git add <nome_file>`: Per aggiungere le modifiche.    
 - `git commit`: Per salvare le modifiche localmente.    
