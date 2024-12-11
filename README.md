@@ -30,13 +30,15 @@ Il progetto consiste nella realizzazione di un sistema informativo per un consor
 - Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
   dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (nome, 
   cognome e codice fiscale), email e indirizzo di residenza completo (via, cap, numero civico).     
-  Per ciascuno di loro viene inoltre memorizzata la data nella quale si sono registrati presso la biblioteca.
-  Ad ogni utente viene assegnato un codice univoco.   
-  Quando un utente ottiene un libro in prestito la base di dati registra la data di inizio prestito e la copia del libro che è stata presa. Quando (la copia de) il libro viene restituita, la data di restituzione viene registrata.
+  Per ciascuno di loro viene inoltre memorizzata la data nella quale si sono registrati presso la biblioteca.  
+  Ad ogni utente viene assegnato un codice univoco.     
+  Quando un utente ottiene un libro in prestito la base di dati registra la data di inizio prestito e la copia del libro che è stata presa.   
+  Quando (la copia de) il libro viene restituita, la data di restituzione viene registrata.    
   Per i *dottorandi* bisogna mantenere le informazioni sul corso di dottorato, anno di iscrizione e docente relatore, per gli *studenti* bisogna mantenere la matricola ed anno di iscrizione, per i *docenti* bisogna mantenere il settore scientifico disciplinare e ruolo.
 
-- I libri vengono acquistati dalla biblioteca mediante i **fornitori**. 
-  Per ogni fornitore si vuole mantenere l’informazione sulla Partita Iva, capitale sociale e indirizzo. Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore.
+- I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
+  Per ogni fornitore si vuole mantenere l’informazione sulla Partita Iva, capitale sociale e indirizzo.   
+  Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore.
 
 ## 3. SPECIFICA DELLE OPERAZIONI SUI DATI PREVISTE
 Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente definite nel testo precedente, sono:
@@ -58,7 +60,8 @@ Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente
 8. **Estrarre gli utenti per cui c’è più di una biblioteca in cui preso in prestito più di due libri.**
 
 **NOTA IMPORTANTE:**  
-Tutte le operazioni di manipolazione dei dati (punti 1-3) devono essere scritte e valutate sulla base di dati il cui schema è definitivo, ovvero sulla base di dati su cui sono già state effettuate le operazioni di definizione dei dati stessi. **NON SI PUÒ USARE IL DUMP DELLO SCHEMA.**
+Tutte le operazioni di manipolazione dei dati (punti 1-3) devono essere scritte e valutate sulla base di dati il cui schema è definitivo, ovvero sulla base di dati su cui sono già state effettuate le operazioni di definizione dei dati stessi.   
+**NON SI PUÒ USARE IL DUMP DELLO SCHEMA.**
 
 ## 4. INDICAZIONI GENERALI
 Le specifiche fornite sono da considerarsi specifiche minime. Laddove lo studente lo reputi necessario, è possibile ampliarle, in modo che la base di dati mantenga anche informazioni attualmente non previste.
@@ -93,7 +96,7 @@ Il progetto dovrà prevedere le seguenti fasi:
 
 6. **Produrre il database in MySQL.**    
    Il database deve contenere tutte le tabelle individuate nella fase di progetto.    
-   **LA STRUTTURA DEL DATABASE VA COMPLETAMENTE SPECIFICATA PRIMA DELL’INSERZIONE, CANCELLAZIONE E AGGIORNAMENTO DELLE TUPLE.**      
+   **LA STRUTTURA DEL DATABASE VA COMPLETAMENTE SPECIFICATA PRIMA DELL’INSERZIONE, CANCELLAZIONE E AGGIORNAMENTO DELLE TUPLE.**        
    In particolare, devono essere definiti tutti i vincoli di integrità necessari affinché la base di dati modelli correttamente la realtà e per i vincoli di integrità referenziale vanno definite opportune politiche di rimedio alle violazioni.    
    Il database va consegnato sotto forma di un unico file di testo contenente tutti i comandi SQL necessari per formare le tabelle, inserire i dati in queste ultime ed effettuare tutte le operazioni richieste.    
    **NEL CASO IN CUI LA COMPILAZIONE DEL FILE DIA LUOGO AD ERRORE, IL PROGETTO NON VERRÀ CORRETTO.**  
