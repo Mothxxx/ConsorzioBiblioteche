@@ -4,30 +4,32 @@
 Il progetto consiste nella realizzazione di un sistema informativo per un consorzio di biblioteche universitarie.
 
 ## 2. ANALISI DEI REQUISITI
-- Ogni **biblioteca** del consorzio è identificata in modo univoco da un *codice*, ha sede presso una *città* e ha un *orario di 
+1. Ogni **biblioteca** del consorzio è identificata in modo univoco da un *codice*, ha sede presso una *città* e ha un *orario di 
   apertura* e *chiusura giornaliero*, che _può variare a seconda dei giorni della settimana_. 
 
-- Il **consorzio** gestisce un certo numero di libri universitari, dei quali bisogna mantenere le informazioni sul *titolo*, *autori* 
+2. Il **consorzio** gestisce un certo numero di libri universitari, dei quali bisogna mantenere le informazioni sul *titolo*, *autori* 
   (che possono essere più di uno), *casa editrice* e *ISBN* (che identifica il libro).      
 
-- Ogni **libro** appartiene ad _una o più_ **categorie**, per ognuna delle quali si memorizza il *nome* 
+3. Ogni **libro** appartiene ad _una o più_ **categorie**, per ognuna delle quali si memorizza il *nome* 
   e una breve *descrizione*. Un libro può aver avuto *più edizioni*. 
 
-- Ogni **edizione** è identificata da un *codice unico nell’ambito delle edizioni di uno stesso libro* 
+4. Ogni **edizione** è identificata da un *codice unico nell’ambito delle edizioni di uno stesso libro* 
   e per ogni edizione si vuole mantenere il *numero di pagine* e il *costo*.  
   Di ogni edizione di un libro possono esistere _più copie_, ognuna della quali è identificata da un *numero, unico nell’ambito delle copie di uno stesso libro*.     
 
-- Per ogni **copia** va indicata la sua collocazione, ovvero la *biblioteca*, il *numero dello scaffale* 
-  e il *numero del posto*. _Non è possibile che due copie diverse abbiano la stessa collocazione_.
+5. Per ogni **copia** va indicata la sua collocazione, ovvero la *biblioteca*, il *numero dello scaffale* 
+  e il *numero del posto*.     
+  _Non è possibile che due copie diverse abbiano la stessa collocazione_.
 
-- Per ogni **autore** si vogliono memorizzare le informazioni relative a nome, cognome, luogo, data 
-  di nascita e nazionalità.   
-- Per la **casa editrice** si vogliono memorizzare informazioni relative a nome, sede e partita iva.
+6. Per ogni **autore** si vogliono memorizzare le informazioni relative a *nome*, *cognome*, *luogo*, *data di nascita*
+  e *nazionalità*.   
 
-- I libri possono essere organizzati in **collane**, caratterizzate da un nome ed una descrizione.  
-   Ogni libro può appartenere ad al più una collana.
+7. Per la **casa editrice** si vogliono memorizzare informazioni relative a *nome*, *sede* e *partita iva*.
 
-- Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
+8. I libri possono essere organizzati in **collane**, caratterizzate da un *nome* ed una *descrizione*.  
+   Ogni libro _può appartenere ad al più una collana_.
+
+9. Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
   dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (nome, 
   cognome e codice fiscale), email e indirizzo di residenza completo (via, cap, numero civico).     
   Per ciascuno di loro viene inoltre memorizzata la data nella quale si sono registrati presso la biblioteca.  
@@ -36,7 +38,7 @@ Il progetto consiste nella realizzazione di un sistema informativo per un consor
   Quando (la copia de) il libro viene restituita, la data di restituzione viene registrata.    
   Per i *dottorandi* bisogna mantenere le informazioni sul corso di dottorato, anno di iscrizione e docente relatore, per gli *studenti* bisogna mantenere la matricola ed anno di iscrizione, per i *docenti* bisogna mantenere il settore scientifico disciplinare e ruolo.
 
-- I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
+10. I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
   Per ogni fornitore si vuole mantenere l’informazione sulla Partita Iva, capitale sociale e indirizzo.   
   Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore.
 
