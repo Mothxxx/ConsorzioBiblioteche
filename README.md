@@ -36,7 +36,8 @@ Il progetto consiste nella realizzazione di un sistema informativo per un consor
   Quando un utente ottiene un libro in prestito la base di dati registra la *data di inizio prestito* e la *copia del libro*
   che è stata presa.   
   Quando (la copia de) il libro viene restituita, la *data di restituzione* viene registrata.    
-  Per i **dottorandi** bisogna mantenere le informazioni sul *corso di dottorato*, *anno di iscrizione*e *docente relatore*, per gli *studenti* bisogna mantenere la **matricola** ed *anno di iscrizione*, per i **docenti** bisogna mantenere il *settore scientifico disciplinare* e *ruolo*.
+  Per i **dottorandi** bisogna mantenere le informazioni sul *corso di dottorato*, *anno di iscrizione*e *docente relatore*,  
+  per gli *studenti* bisogna mantenere la **matricola** ed *anno di iscrizione*, per i **docenti** bisogna mantenere il *settore scientifico disciplinare* e *ruolo*.
 
 10. I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
   Per ogni fornitore si vuole mantenere l’informazione sulla *Partita Iva*, *capitale sociale* e *indirizzo*.   
