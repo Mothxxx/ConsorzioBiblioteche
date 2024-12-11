@@ -6,7 +6,7 @@ Il tuo collaboratore dovrà seguire questi passaggi per clonare il repository e 
 - Clonare il repository remoto:  
     Se il tuo collaboratore ha già configurato Git, dovrà eseguire il comando per clonare il repository:  
 
-    `git clone https://github.com/Mothxxx/-ConsorzioBiblioteche.git`  
+    `git clone https://github.com/Mothxxx/ConsorzioBiblioteche.git`  
 
     In alternativa, può utilizzare l’interfaccia grafica di GitHub Desktop per fare questa operazione.  
 
