@@ -2,7 +2,7 @@
 ## 1. **Specifica delle operazioni sui dati**
 Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente definite nel testo precedente, sono:
 
-1. **Fornire le istruzioni per la creazione del DB e degli oggetti che lo costituiscono**
+1. **Fornire le istruzioni per la creazione del DB e degli oggetti che lo costituiscono**.
 
 2. **Per ogni relazione individuata, fornire le istruzioni di inserimento (almeno 10 tuple per ogni relazione individuata), di modifica ed eliminazione di almeno un’istanza.**
 
