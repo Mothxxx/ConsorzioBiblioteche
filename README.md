@@ -1,54 +1,5 @@
 # SISTEMA INFORMATIVO PER LA GESTIONE DI UN CONSORZIO DI BIBLIOTECHE UNIVERSITARIE
-
-## 1. TEMA DEL PROGETTO
-Il progetto consiste nella realizzazione di un sistema informativo per un consorzio di biblioteche universitarie.
-
-
-
-
-## 2. ANALISI DEI REQUISITI
-1. Ogni **biblioteca** del consorzio è identificata in modo univoco da un *codice*, ha sede presso una *città* e ha un *orario di apertura* e *chiusura giornaliero*, che _può variare a seconda dei giorni della settimana_. 
-
-2. Il **consorzio** gestisce un certo numero di **libri** universitari, dei quali bisogna mantenere le informazioni sul *titolo*, *autori* 
-  (che possono essere più di uno), *casa editrice* e *ISBN* (che identifica il libro).      
-
-3. Ogni libro appartiene ad _una o più_ **categorie**, per ognuna delle quali si memorizza il *nome* 
-  e una breve *descrizione*. Un libro può aver avuto *più edizioni*. 
-
-4. ? Ogni **edizione** è identificata da un *codice unico nell’ambito delle edizioni di uno stesso libro* 
-  e per ogni edizione si vuole mantenere il *numero di pagine* e il *costo*.  
-  ? Di ogni edizione di un libro possono esistere _più copie_, ognuna della quali è identificata da un *numero, unico nell’ambito delle copie di uno stesso libro*.     
-
-5. Per ogni **copia** va indicata la sua collocazione, ovvero la *biblioteca*, il *numero dello scaffale* 
-   e il *numero del posto*.     
-  _Non è possibile che due copie diverse abbiano la stessa collocazione_.
-
-6. Per ogni **autore** si vogliono memorizzare le informazioni relative a *nome*, *cognome*, *luogo*, *data di nascita*
-   e *nazionalità*.   
-
-7. Per la **casa editrice** si vogliono memorizzare informazioni relative a *nome*, *sede* e *partita iva*.
-
-8. I libri possono essere organizzati in **collane**, caratterizzate da un *nome* ed una *descrizione*.  
-   Ogni libro _può appartenere ad al più una collana_.
-
-9. Gli **utenti** della biblioteca (che possono essere esclusivamente studenti, ricercatori, 
-  dottorandi o docenti) sono registrati nella base di dati tramite i loro dati anagrafici (*nome*, 
-  *cognome* e *codice fiscale*), *email* e *indirizzo di residenza completo* (via, cap, numero civico).     
-  Per ciascuno di loro viene inoltre memorizzata la *data nella quale si sono registrati presso la biblioteca*.  
-  Ad ogni utente viene assegnato un *codice univoco*.     
-  Quando un utente ottiene un libro in **prestito** la base di dati registra la *data di inizio prestito* e la *copia del libro* che è stata presa.   
-  Quando (la copia del) il libro viene restituita, la *data di restituzione* viene registrata.    
-  Per i **dottorandi** bisogna mantenere le informazioni sul *corso di dottorato*, *anno di iscrizione*e *docente relatore*,  
-  per gli *studenti* bisogna mantenere la *matricola* ed *anno di iscrizione*, per i **docenti** bisogna mantenere il *settore scientifico disciplinare* e *ruolo*.
-
-10. I libri vengono acquistati dalla biblioteca mediante i **fornitori**.   
-    Per ogni fornitore si vuole mantenere l’informazione sulla *Partita Iva*, *capitale sociale* e *indirizzo*.   
-    _Tutti i libri di una stessa casa editrice sono acquistati dallo stesso fornitore_.
-
-
-
-
-## 3. SPECIFICA DELLE OPERAZIONI SUI DATI PREVISTE
+## 1. **Specifica delle operazioni sui dati**
 Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente definite nel testo precedente, sono:
 
 1. **Fornire le istruzioni per la creazione del DB e degli oggetti che lo costituiscono**
@@ -71,7 +22,7 @@ Le operazioni sulla base di dati, oltre a quelle eventualmente ed implicitamente
 Tutte le operazioni di manipolazione dei dati (punti 1-3) devono essere scritte e valutate sulla base di dati il cui schema è definitivo, ovvero sulla base di dati su cui sono già state effettuate le operazioni di definizione dei dati stessi.   
 **NON SI PUÒ USARE IL DUMP DELLO SCHEMA.**
 
-## 4. INDICAZIONI GENERALI
+## 2. INDICAZIONI GENERALI
 Le specifiche fornite sono da considerarsi specifiche minime. Laddove lo studente lo reputi necessario, è possibile ampliarle, in modo che la base di dati mantenga anche informazioni attualmente non previste.
 
 Il progetto dovrà prevedere le seguenti fasi:
